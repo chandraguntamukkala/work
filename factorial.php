@@ -1,32 +1,30 @@
-
-
 <html>
 <head>
-<title>Student form</title>
+<title>
+factorial
+</title>
+<h1>Factorial Of A Number</h1>
 <script type="text/javascript">
-//Factorial start here
-function factFun() {
-//var n=5;
-var n=    document.getElementById("fact").value;
-document.getElementById("fact_text").innerHTML=n;
-var m=1;
-while(n) {
-    m=m*n
-    n--;
+function myFact()
+	{
+	var fact=1;
+	var i;
+	var n=document.frm1.name.value;
+	for(i=1;i<=n;i++)
+	{
+		fact=fact*i;
+	}
+document.getElementById("fact2").innerHTML=fact ;
 }
-//alert(m);
-document.getElementById("fact_result").innerHTML=m;
-}
-//Factorial end here
 </script>
 </head>
 <body>
-
-
-Factorial:-<br>
-Enter Number  <input type="text" name="fact" id="fact" value=""><br>
-<button id="submit" name="submit" onclick="factFun();">Factorial</button><br>
-<span id="fact_text"></span> Factorial is: <span id="fact_result"></span> 
-
+	<p id="fact2"></p>
+<div align="center">
+	
+<form name=frm1>
+Enter any number :<input type="text" name="name">
+<input type="button" value="calculate" onclick="myFact()">
+</form>
 </body>
 </html>
