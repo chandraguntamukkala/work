@@ -3,15 +3,15 @@
 <title>Data</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
-jQuery(document).ready(function() 
+$(document).ready(function() 
 {
-    jQuery('.tabs .tab-links a').on('click', function(e)  
+    $('.tabs .tab-links a').on('click', function(e)  
     {
-        var currentAttrValue = jQuery(this).attr('href');
+        var currentAttrValue = $(this).attr('href');
         // Show/Hide Tabs
-        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+        $('.tabs ' + currentAttrValue).show().siblings().hide();
          // Change/remove current tab to active
-        jQuery(this).parent('button').addClass('active').siblings().removeClass('active');
+        $(this).parent('button').addClass('active').siblings().removeClass('active');
         e.preventDefault();
     });
 });
