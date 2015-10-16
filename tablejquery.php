@@ -34,7 +34,7 @@
     var c = $('#n3').val();
     var d = $('#n4').val();
 
-  var recRow = '<p id="rowCount'+rowCount+'"><tr><td><input name="" type="text" size="17%" maxlength="120" value="'+a+'"/></td><td><input name="" type="text" maxlength="120" value="'+b+'" style="margin: 4px 5px 0 5px;"/></td><td><input name="" type="text" maxlength="120" value="'+c+'" style="margin: 4px 10px 0 0px;"/></td><td><input name="" type="text" maxlength="120" value="'+d+'" style="margin: 4px 5px 0 5px;"/></td></tr><bu <a href="javascript:void(0);" onclick="removeRow('+rowCount+');"><button>Delete</button></a></p>'; 
+  var recRow = '<p id="rowCount'+rowCount+'"><tr><td><input name="" type="text" size="17%" maxlength="120" value="'+a+'"/></td><td><input name="" type="text" maxlength="120" value="'+b+'" style="margin: 4px 5px 0 5px;"/></td><td><input name="" type="text" maxlength="120" value="'+c+'" style="margin: 4px 10px 0 0px;"/></td><td><input name="" type="text" maxlength="120" value="'+d+'" style="margin: 4px 5px 0 5px;"/></td></tr> <a href="javascript:void(0);" onclick="removeRow('+rowCount+');"><button>Delete</button></a></p>'; 
   $('#addedRows').append(recRow);
    } 
    function removeRow(removeNum) 
