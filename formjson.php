@@ -30,12 +30,12 @@ $(document).ready(function () {
 </head>
 <body>
 
-<form id="frmItem">
+<form id="frmItem" action="insert.php" method="POST">
  	
-ID:<input type="text" class="form-control" id="txtID" placeholder="Enter your Number"></br>
-Name:<input type="text" class="form-control" id="txtName" placeholder="Enter your Name"></br>
-Phone:<input type="text" class="form-control" id="txtPhone" placeholder="Enter your Phone number"></br>
-Email:<input type="text" class="form-control" id="txtEmail" placeholder="Enter your Email"></br>
+ID:<input type="text" name="ID" class="form-control" id="txtID" placeholder="Enter your Number"></br>
+Name:<input type="text" name="Name" class="form-control" id="txtName" placeholder="Enter your Name"></br>
+Phone:<input type="text" name="Phone" class="form-control" id="txtPhone" placeholder="Enter your Phone number"></br>
+Email:<input type="text" name="Email" class="form-control" id="txtEmail" placeholder="Enter your Email"></br>
 <button id="btnSave" class="btn btn-primary">Save</button>
 
 </form>
